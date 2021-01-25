@@ -5,11 +5,11 @@ Import ListNotations ListAutomationNotations.
 
 Set Implicit Arguments.
 
-(** ** Definitions *)
+(* ** Definitions *)
 
-(** ** Pre-order properties *)
+(* ** Pre-order properties *)
 
-(** BEGIN LEGACY CODE FOR LIBRARY  *)
+(* BEGIN LEGACY CODE FOR LIBRARY  *)
 
 Section Properties.
 
@@ -62,7 +62,7 @@ Delimit Scope reduction_chain with redchain_scope.
 Notation "x '⪯ₘ' y" := (pair x y) (at level 80, right associativity, only parsing) : reduction_chain.
 Notation "'⎩' xs '⎭'" := (ltac:(redchain2Prop (xs % redchain_scope))) (only parsing).
  *)
-(** END LEGACY  *)
+(* END LEGACY  *)
 
 Lemma red_comp X (p : X -> Prop) Y (q : Y -> Prop) :
   p ⪯ q -> (fun x => ~ p x) ⪯ (fun y => ~ q y).

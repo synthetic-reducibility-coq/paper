@@ -39,13 +39,6 @@
 <span class="id" title="keyword">Definition</span> <a id="LEM" class="idref" href="#LEM"><span class="id" title="definition">LEM</span></a> := <span class="id" title="notation">forall</span> <a id="P:1" class="idref" href="#P:1"><span class="id" title="binder">P</span></a><span class="id" title="notation">,</span> <a class="idref" href="Undecidability.Synthetic.reductions.html#P:1"><span class="id" title="variable">P</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.12.1/stdlib//Coq.Init.Logic.html#f031fe1957c4a4a8e217aa46af2b4e25"><span class="id" title="notation">\/</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.12.1/stdlib//Coq.Init.Logic.html#63a68285c81db8f9bc456233bb9ed181"><span class="id" title="notation">~</span></a> <a class="idref" href="Undecidability.Synthetic.reductions.html#P:1"><span class="id" title="variable">P</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-<a id="lab10"></a><h1 class="section">Reducibility</h1>
-
-</div>
-<div class="code">
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="reduces_m" class="idref" href="#reduces_m"><span class="id" title="definition">reduces_m</span></a> {<a id="X:2" class="idref" href="#X:2"><span class="id" title="binder">X</span></a> <a id="Y:3" class="idref" href="#Y:3"><span class="id" title="binder">Y</span></a>} (<a id="f:4" class="idref" href="#f:4"><span class="id" title="binder">f</span></a> : <a class="idref" href="Undecidability.Synthetic.reductions.html#X:2"><span class="id" title="variable">X</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.12.1/stdlib//Coq.Init.Logic.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <a class="idref" href="Undecidability.Synthetic.reductions.html#Y:3"><span class="id" title="variable">Y</span></a>) (<a id="P:5" class="idref" href="#P:5"><span class="id" title="binder">P</span></a> : <a class="idref" href="Undecidability.Synthetic.reductions.html#X:2"><span class="id" title="variable">X</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.12.1/stdlib//Coq.Init.Logic.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <span class="id" title="keyword">Prop</span>) (<a id="Q:6" class="idref" href="#Q:6"><span class="id" title="binder">Q</span></a> : <a class="idref" href="Undecidability.Synthetic.reductions.html#Y:3"><span class="id" title="variable">Y</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.12.1/stdlib//Coq.Init.Logic.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <span class="id" title="keyword">Prop</span>) :=<br/>
@@ -89,13 +82,6 @@
 <span class="id" title="keyword">Notation</span> <a id="e7623def6d5fc89c4e764192add43051" class="idref" href="#e7623def6d5fc89c4e764192add43051"><span class="id" title="notation">&quot;</span></a>P ⪯ₜᴛ Q" := (<a class="idref" href="Undecidability.Synthetic.reductions.html#red_tTuring"><span class="id" title="definition">red_tTuring</span></a> <span class="id" title="var">P</span> <span class="id" title="var">Q</span>) (<span class="id" title="tactic">at</span> <span class="id" title="keyword">level</span> 50).<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-<a id="lab11"></a><h2 class="section">Many-one reducibility</h2>
-
-</div>
-<div class="code">
 
 <br/>
 <span class="id" title="keyword">Instance</span> <a id="red_m_reflexive" class="idref" href="#red_m_reflexive"><span class="id" title="instance">red_m_reflexive</span></a> {<a id="X:54" class="idref" href="#X:54"><span class="id" title="binder">X</span></a>} : <a class="idref" href="http://coq.inria.fr/distrib/V8.12.1/stdlib//Coq.Classes.RelationClasses.html#Reflexive"><span class="id" title="class">Reflexive</span></a> (@<a class="idref" href="Undecidability.Synthetic.reductions.html#red_m"><span class="id" title="definition">red_m</span></a> <a class="idref" href="Undecidability.Synthetic.reductions.html#X:54"><span class="id" title="variable">X</span></a> <a class="idref" href="Undecidability.Synthetic.reductions.html#X:54"><span class="id" title="variable">X</span></a>).<br/>
@@ -254,13 +240,6 @@
 <span class="id" title="keyword">Qed</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-<a id="lab12"></a><h2 class="section">One-one reducibility</h2>
-
-</div>
-<div class="code">
 
 <br/>
 <span class="id" title="keyword">Instance</span> <a id="red_1_reflexive" class="idref" href="#red_1_reflexive"><span class="id" title="instance">red_1_reflexive</span></a> {<a id="X:134" class="idref" href="#X:134"><span class="id" title="binder">X</span></a>} : <a class="idref" href="http://coq.inria.fr/distrib/V8.12.1/stdlib//Coq.Classes.RelationClasses.html#Reflexive"><span class="id" title="class">Reflexive</span></a> (@<a class="idref" href="Undecidability.Synthetic.reductions.html#red_o"><span class="id" title="definition">red_o</span></a> <a class="idref" href="Undecidability.Synthetic.reductions.html#X:134"><span class="id" title="variable">X</span></a> <a class="idref" href="Undecidability.Synthetic.reductions.html#X:134"><span class="id" title="variable">X</span></a>).<br/>
@@ -385,13 +364,6 @@
 <span class="id" title="keyword">End</span> <a class="idref" href="Undecidability.Synthetic.reductions.html#characterisation_mm_in_oo"><span class="id" title="section">characterisation_mm_in_oo</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-<a id="lab13"></a><h2 class="section">Truth-table reducibility</h2>
-
-</div>
-<div class="code">
 
 <br/>
 <span class="id" title="keyword">Local</span> <span class="id" title="keyword">Notation</span> "( a ,, b )" := (<a class="idref" href="http://coq.inria.fr/distrib/V8.12.1/stdlib//Coq.Init.Specif.html#existT"><span class="id" title="constructor">existT</span></a> <span class="id" title="var">a</span> <span class="id" title="var">b</span>).<br/>
@@ -731,13 +703,6 @@
 <span class="id" title="keyword">Qed</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-<a id="lab14"></a><h2 class="section">Total Turing reducibility</h2>
-
-</div>
-<div class="code">
 
 <br/>
 <span class="id" title="keyword">Instance</span> <a id="red_tT_reflexive" class="idref" href="#red_tT_reflexive"><span class="id" title="instance">red_tT_reflexive</span></a> {<a id="X:357" class="idref" href="#X:357"><span class="id" title="binder">X</span></a>} : <a class="idref" href="http://coq.inria.fr/distrib/V8.12.1/stdlib//Coq.Classes.RelationClasses.html#Reflexive"><span class="id" title="class">Reflexive</span></a> (@<a class="idref" href="Undecidability.Synthetic.reductions.html#red_tTuring"><span class="id" title="definition">red_tTuring</span></a> <a class="idref" href="Undecidability.Synthetic.reductions.html#X:357"><span class="id" title="variable">X</span></a> <a class="idref" href="Undecidability.Synthetic.reductions.html#X:357"><span class="id" title="variable">X</span></a>).<br/>

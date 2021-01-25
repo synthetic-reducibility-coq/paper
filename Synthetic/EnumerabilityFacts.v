@@ -3,7 +3,7 @@ From Undecidability.Shared Require Export embed_nat equiv_on partial mu_nat.
 Require Import List Morphisms Lia.
 Export EmbedNatNotations.
 
-(** ** Enumerability  *)
+(* ** Enumerability  *)
 
 Instance Proper_enumerator {X} :
   Proper (@equiv_rel _ (equiv_ran) ==> pointwise_relation X iff ==> iff ) (@enumerator X).
@@ -243,7 +243,7 @@ Proof.
   - destruct Hn as (x & [m H] % (He (_ , _ ))). eauto.
 Qed.
 
-(** *** Enumerable types  *)
+(* *** Enumerable types  *)
 
 Lemma enumerator_enumeratorᵗ X f :
   enumerator f (fun _ : X => True) <-> enumeratorᵗ f X.
@@ -328,7 +328,7 @@ Proof.
   - exists 0. reflexivity.
 Qed.
 
-(** embedability  *)
+(* embedability  *)
 
 Definition retraction' {X} {Y} (I : X -> Y) R := forall x : X, R (I x) = Some x.
 Notation retraction I R X Y := (@retraction' X Y I R).
@@ -412,7 +412,7 @@ Proof.
     + eapply datatype_enumerable; firstorder.
 Qed.
 
-(** Type classes *)
+(* Type classes *)
 
 Existing Class enumeratorᵗ'.
 (* Existing Class enumerableᵗ. *)

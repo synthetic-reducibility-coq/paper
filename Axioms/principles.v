@@ -3,9 +3,9 @@ Require Import Lia Nat.
 From stdpp Require Import numbers list list_numbers.
 From Undecidability Require Import SemiDecidabilityFacts DecidabilityFacts EnumerabilityFacts halting reductions Axioms.axioms.
 
-(** * CT in relation to other axioms  *)
+(* * CT in relation to other axioms  *)
 
-(** ** Provable choice axioms  *)
+(* ** Provable choice axioms  *)
 
 Lemma decidable_AC X :
   forall R : X -> nat -> Prop, decidable (curry R) -> (forall x, exists n, R x n) -> exists f, forall x, R x (f x).
@@ -48,7 +48,7 @@ Proof.
   now exists g.
 Qed.
 
-(** ** Extensionality axioms  *)
+(* ** Extensionality axioms  *)
 
 Definition Fext := forall X Y (f g : X -> Y), (forall x, f x = g x) -> f = g.
 Definition Pext := forall P Q : Prop, P <-> Q -> P = Q.
@@ -113,7 +113,7 @@ Section CT_wrong.
 
 End CT_wrong.
 
-(** ** Classical logical axioms  *)
+(* ** Classical logical axioms  *)
 
 Definition LEM := forall P, P \/ ~ P.
 Definition DNE := forall P, ~~P -> P.
@@ -489,7 +489,7 @@ Proof.
   eapply lpo.
 Qed.
 
-(** ** Axioms of russian constructivism  *)
+(* ** Axioms of russian constructivism  *)
 
 Definition MP := forall f : nat -> bool, ~~ (exists n, f n = true) -> exists n, f n = true.
 
@@ -674,7 +674,7 @@ Proof.
     intros n. red. unfold P_inf. destruct Nat.even; try now firstorder congruence.
 *)
 
-(** ** Choice axioms *)
+(* ** Choice axioms *)
 
 Definition AC_on X Y :=
   forall R : X -> Y -> Prop, (forall x, exists y, R x y) -> exists f : X -> Y, forall x, R x (f x).
@@ -863,7 +863,7 @@ Proof.
   now eapply (K0_compl_undec EA), AC_0_0_LPO_incompat'.
 Qed.
 
-(** ** Brouwer's intuitionism *)
+(* ** Brouwer's intuitionism *)
 
 Definition WC_N :=
   forall R : (nat -> nat) -> nat -> Prop,

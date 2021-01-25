@@ -3,7 +3,7 @@ Require Import Setoid Morphisms.
 Require Export Undecidability.Synthetic.Definitions Undecidability.Synthetic.FinitenessFacts.
 From Undecidability.Shared Require Import mu_nat equiv_on.
 
-(** Facts on reflects *)
+(* Facts on reflects *)
 
 Lemma reflects_not b P :
   reflects b P -> reflects (negb b) (~P).
@@ -41,11 +41,11 @@ Proof.
     + intros H1 % H. congruence.
 Qed.
 
-(** * Decidability and Enumerability  *)
+(* * Decidability and Enumerability  *)
 
-(** ** Decidability  *)
+(* ** Decidability  *)
 
-(** Proper lemmas *)
+(* Proper lemmas *)
 
 Instance Proper_decider {X} :
   Proper (pointwise_relation X (@eq bool) ==> pointwise_relation X iff ==> iff ) (@decider X).
@@ -74,7 +74,7 @@ Proof.
   etransitivity. eapply (Hp x). rewrite E. symmetry. eapply Hq.
 Qed.
 
-(** Decidable predicates are logically decidable and stable  *)
+(* Decidable predicates are logically decidable and stable  *)
 
 Lemma decider_decide {X} {f} {p} :
   decider f p -> forall x : X, p x \/ ~ p x.
@@ -94,7 +94,7 @@ Proof.
   intros H x. destruct (decidable_decide H x); tauto.
 Qed.
 
-(** Dependently-typed deciders *)
+(* Dependently-typed deciders *)
 
 Lemma decider_dec X (p : X -> Prop) f :
   decider f p -> forall x, Dec.dec (p x).
@@ -122,7 +122,7 @@ Proof.
   - intros [f]. eapply dec_decidable, f.
 Qed.
 
-(** Closure properties of decidability *)
+(* Closure properties of decidability *)
 
 Lemma decider_complement X {p : X -> Prop} f :
   decider f p -> decider (fun x => negb (f x)) (complement p).
@@ -172,7 +172,7 @@ Proof.
   eapply (Hf (x, n)), Hn.
 Qed.
 
-(** *** Discrete types  *)
+(* *** Discrete types  *)
 
 Notation eq_on T := ((fun '(x,y) => x = y :> T)).
 

@@ -2,7 +2,7 @@ Require Import Undecidability.Synthetic.DecidabilityFacts Undecidability.Synthet
 Require Import List Lia.
 Export EmbedNatNotations.
 
-(** ** Semi-decidability  *)
+(* ** Semi-decidability  *)
 
 Lemma semi_decidable_part_iff {X} {p : X -> Prop} {Part : partiality}:
   semi_decidable p <-> exists Y (f : X -> part Y), forall x, p x <-> exists y, f x =! y.

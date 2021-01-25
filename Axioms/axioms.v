@@ -66,7 +66,7 @@ Require Import ssreflect Setoid Program Lia.
 (*     destruc-t (d i); firstorder. *)
 (* Qed. *)
 
-(** * Church's thesis in type theory *)
+(* * Church's thesis in type theory *)
 
 Class model_of_computation :=
   {
@@ -145,7 +145,7 @@ Qed.
 
 Instance equiv_part `{partiality} {A} : equiv_on (part A) := {| equiv_rel := @partial.equiv _ A |}.
 
-(** ** Bauer's enumerability axiom EA  *)
+(* ** Bauer's enumerability axiom EA  *)
 
 Definition EA := ∑ e : nat -> (nat -> option nat), forall f : nat -> option nat, exists c, e c ≡{ran} f.
 
@@ -223,7 +223,7 @@ Proof.
   eexists. apply (EA_to_EA'_prf H).
 Qed.
 
-(** ** Richman's enumerability of partial functions EPF  *)
+(* ** Richman's enumerability of partial functions EPF  *)
 
 Definition EPF `{partiality} := ∑ e : nat -> (nat ↛ nat), forall f : nat ↛ nat, exists n, e n ≡{nat ↛ nat} f.
 

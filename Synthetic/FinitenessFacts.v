@@ -75,7 +75,7 @@ Proof.
   - apply LEM_exhaustible_listable.
 Qed.
 
-(** ** Infinite types and predicates  *)
+(* ** Infinite types and predicates  *)
 
 Lemma non_exhaustible_non_listable {X} (p : X -> Prop) :
   ~ exhaustible p -> ~ listable p.

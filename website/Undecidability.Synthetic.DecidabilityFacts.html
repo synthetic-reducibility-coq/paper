@@ -32,12 +32,6 @@
 <span class="id" title="keyword">From</span> <span class="id" title="var">Undecidability.Shared</span> <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="Undecidability.Shared.mu_nat.html#"><span class="id" title="library">mu_nat</span></a> <a class="idref" href="Undecidability.Shared.equiv_on.html#"><span class="id" title="library">equiv_on</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-Facts on reflects 
-</div>
-<div class="code">
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="reflects_not" class="idref" href="#reflects_not"><span class="id" title="lemma">reflects_not</span></a> <a id="b:1" class="idref" href="#b:1"><span class="id" title="binder">b</span></a> <a id="P:2" class="idref" href="#P:2"><span class="id" title="binder">P</span></a> :<br/>
@@ -81,20 +75,10 @@ Facts on reflects
 <span class="id" title="keyword">Qed</span>.<br/>
 
 <br/>
-</div>
 
-<div class="doc">
-<a id="lab1"></a><h1 class="section">Decidability and Enumerability</h1>
+<br/>
 
-<div class="paragraph"> </div>
-
-<a id="lab2"></a><h2 class="section">Decidability</h2>
-
-<div class="paragraph"> </div>
-
- Proper lemmas 
-</div>
-<div class="code">
+<br/>
 
 <br/>
 <span class="id" title="keyword">Instance</span> <a id="Proper_decider" class="idref" href="#Proper_decider"><span class="id" title="instance">Proper_decider</span></a> {<a id="X:15" class="idref" href="#X:15"><span class="id" title="binder">X</span></a>} :<br/>
@@ -127,12 +111,6 @@ Facts on reflects
 <span class="id" title="keyword">Qed</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-Decidable predicates are logically decidable and stable  
-</div>
-<div class="code">
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="decider_decide" class="idref" href="#decider_decide"><span class="id" title="lemma">decider_decide</span></a> {<a id="X:22" class="idref" href="#X:22"><span class="id" title="binder">X</span></a>} {<a id="f:23" class="idref" href="#f:23"><span class="id" title="binder">f</span></a>} {<a id="p:24" class="idref" href="#p:24"><span class="id" title="binder">p</span></a>} :<br/>
@@ -156,12 +134,6 @@ Decidable predicates are logically decidable and stable
 <span class="id" title="keyword">Qed</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-Dependently-typed deciders 
-</div>
-<div class="code">
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="decider_dec" class="idref" href="#decider_dec"><span class="id" title="lemma">decider_dec</span></a> <a id="X:31" class="idref" href="#X:31"><span class="id" title="binder">X</span></a> (<a id="p:32" class="idref" href="#p:32"><span class="id" title="binder">p</span></a> : <a class="idref" href="Undecidability.Synthetic.DecidabilityFacts.html#X:31"><span class="id" title="variable">X</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.12.1/stdlib//Coq.Init.Logic.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <span class="id" title="keyword">Prop</span>) <a id="f:33" class="idref" href="#f:33"><span class="id" title="binder">f</span></a> :<br/>
@@ -194,12 +166,6 @@ Dependently-typed deciders
 <span class="id" title="keyword">Qed</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-Closure properties of decidability 
-</div>
-<div class="code">
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="decider_complement" class="idref" href="#decider_complement"><span class="id" title="lemma">decider_complement</span></a> <a id="X:46" class="idref" href="#X:46"><span class="id" title="binder">X</span></a> {<a id="p:47" class="idref" href="#p:47"><span class="id" title="binder">p</span></a> : <a class="idref" href="Undecidability.Synthetic.DecidabilityFacts.html#X:46"><span class="id" title="variable">X</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.12.1/stdlib//Coq.Init.Logic.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <span class="id" title="keyword">Prop</span>} <a id="f:48" class="idref" href="#f:48"><span class="id" title="binder">f</span></a> :<br/>
@@ -257,13 +223,6 @@ Closure properties of decidability
 <span class="id" title="keyword">Qed</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-<a id="lab3"></a><h3 class="section">Discrete types</h3>
-
-</div>
-<div class="code">
 
 <br/>
 <span class="id" title="keyword">Notation</span> <a id="eq_on" class="idref" href="#eq_on"><span class="id" title="abbreviation">eq_on</span></a> <span class="id" title="var">T</span> := ((<span class="id" title="keyword">fun</span> <a id="pat:89" class="idref" href="#pat:89"><span class="id" title="binder">'(</span></a><a id="pat:89" class="idref" href="#pat:89"><span class="id" title="binder">x</span></a><a id="pat:89" class="idref" href="#pat:89"><span class="id" title="binder">,</span></a><a id="pat:89" class="idref" href="#pat:89"><span class="id" title="binder">y</span></a><a id="pat:89" class="idref" href="#pat:89"><span class="id" title="binder">)</span></a> =&gt; <a class="idref" href="Undecidability.Synthetic.DecidabilityFacts.html#x:88"><span class="id" title="variable">x</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.12.1/stdlib//Coq.Init.Logic.html#b8b2ebc8e1a8b9aa935c0702efb5dccf"><span class="id" title="notation">=</span></a> <a class="idref" href="Undecidability.Synthetic.DecidabilityFacts.html#y:87"><span class="id" title="variable">y</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.12.1/stdlib//Coq.Init.Logic.html#b8b2ebc8e1a8b9aa935c0702efb5dccf"><span class="id" title="notation">:&gt;</span></a> <span class="id" title="var">T</span>)).<br/>

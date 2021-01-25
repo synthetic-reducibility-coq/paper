@@ -3,7 +3,7 @@ Require Import ssreflect.
 
 Require Import Undecidability.Synthetic.EnumerabilityFacts.
 
-(** * Halting problems  *)
+(* * Halting problems  *)
 
 Section assm.
 

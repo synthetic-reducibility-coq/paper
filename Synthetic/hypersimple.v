@@ -259,7 +259,7 @@ Qed.
 (* Check tt_complete_exceeds. *)
 (* Print Assumptions tt_complete_exceeds. *)
 
-(** Output:
+(* Output:
 
 <<
 tt_complete_exceeds

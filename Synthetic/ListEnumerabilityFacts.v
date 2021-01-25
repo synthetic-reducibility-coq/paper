@@ -3,7 +3,7 @@ From Undecidability Require Import Shared.embed_nat.
 Require Import List Lia.
 Import ListNotations EmbedNatNotations.
 
-(** ** List enumerability *)
+(* ** List enumerability *)
 
 Definition cumulative {X} (L: nat -> list X) :=
   forall n, exists A, L (S n) = L n ++ A.
@@ -234,7 +234,7 @@ Proof.
   eexists. now eapply enumeratorᵗ_list.
 Qed.
 
-(** Typeclasses  *)
+(* Typeclasses  *)
 
 Definition L_T {X : Type} {f : nat -> list X} {H : list_enumeratorᵗ f X} : nat -> list X.
   exact (cumul f).
@@ -272,7 +272,7 @@ Proof.
   intros [? H]. eapply H.
 Defined. *)
 
-(** Compatibility  *)
+(* Compatibility  *)
 
 Hint Unfold enumerable list_enumerable : core.
 
@@ -285,7 +285,7 @@ Proof.
   split; eauto.
 Qed.
 
-(** Predicate embedability *)
+(* Predicate embedability *)
 
 (* Definition infinite {X} (sz : X -> nat) (p : X -> Prop) := forall n, exists x, sz x >= n /\ p x. *)
 

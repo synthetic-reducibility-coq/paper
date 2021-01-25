@@ -8,7 +8,7 @@ From Undecidability.Shared Require Import Dec.
 Ltac inv H := inversion H; subst; clear H.
 Definition LEM := forall P, P \/ ~ P.
 
-(** * Reducibility *)
+(* * Reducibility *)
 
 Definition reduces_m {X Y} (f : X -> Y) (P : X -> Prop) (Q : Y -> Prop) :=
   forall x, P x <-> Q (f x).
@@ -44,7 +44,7 @@ Definition red_tTuring {X} {Y} (P : X -> Prop) (Q : Y -> Prop) :=
     reduces_tTuring f P Q.
 Notation "P ⪯ₜᴛ Q" := (red_tTuring P Q) (at level 50).
 
-(** ** Many-one reducibility *)
+(* ** Many-one reducibility *)
 
 Instance red_m_reflexive {X} : Reflexive (@red_m X X).
 Proof.
@@ -181,7 +181,7 @@ Proof.
   reflexivity.
 Qed.
 
-(** ** One-one reducibility *)
+(* ** One-one reducibility *)
 
 Instance red_1_reflexive {X} : Reflexive (@red_o X X).
 Proof.
@@ -289,7 +289,7 @@ Section characterisation_mm_in_oo.
 
 End characterisation_mm_in_oo.
 
-(** ** Truth-table reducibility  *)
+(* ** Truth-table reducibility  *)
 
 Local Notation "( a ,, b )" := (existT a b).
 Local Notation "( a ).1" := (projT1 a).
@@ -600,7 +600,7 @@ Proof.
     setoid_rewrite H. eapply FG.
 Qed.
 
-(** ** Total Turing reducibility  *)
+(* ** Total Turing reducibility  *)
 
 Instance red_tT_reflexive {X} : Reflexive (@red_tTuring X X).
 Proof.
