@@ -1,0 +1,37 @@
+-Q . Undecidability
+
+-arg -w -arg -notation-overridden
+COQDOCFLAGS = "--charset utf-8 -s --with-header ./website/resources/header.html --with-footer ./website/resources/footer.html --index indexpage"
+
+Shared/Dec.v
+Shared/ListAutomation.v
+Shared/FilterFacts.v
+Shared/embed_nat.v
+Shared/mu_nat.v
+Shared/equiv_on.v
+Shared/partial.v
+Shared/Pigeonhole.v
+
+Synthetic/Definitions.v
+Synthetic/DecidabilityFacts.v
+Synthetic/SemiDecidabilityFacts.v
+Synthetic/EnumerabilityFacts.v
+Synthetic/ListEnumerabilityFacts.v
+Synthetic/MoreEnumerabilityFacts.v
+Synthetic/ReducibilityFacts.v
+Synthetic/truthtables.v
+Synthetic/reductions.v
+Synthetic/FinitenessFacts.v
+Synthetic/myhill.v
+
+Axioms/principles.v
+Axioms/halting.v
+Axioms/axioms.v
+Axioms/EA.v
+
+Synthetic/simple.v
+Synthetic/simple_construction.v
+Synthetic/hypersimple.v
+Synthetic/hypersimple_construction.v
+
+Synthetic/summary_lics.v
